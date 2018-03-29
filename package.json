@@ -1,0 +1,69 @@
+{
+  "name": "seed-ng4",
+  "version": "1.0.0",
+  "description": "base ng-4 setup",
+  "scripts": {
+    "build:dev": "node --max_old_space_size=8192 node_modules/webpack/bin/webpack.js --config config/webpack.dev.js --progress --profile",
+    "start": "webpack-dev-server --config config/webpack.dev.js --progress --profile --watch --content-base src/",
+    "test": "node --max_old_space_size=4096 ./node_modules/karma/bin/karma start",
+    "watch:dev": "yarpm run build:dev -- --watch",
+    "watch": "yarpm run watch:dev",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sree-bh/ng4-base.git"
+  },
+  "author": "Sritama Bhattacharya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sree-bh/ng4-base/issues"
+  },
+  "homepage": "https://github.com/sree-bh/ng4-base#readme",
+  "engines": {
+    "node": ">=8.x.x",
+    "npm": ">= 5"
+  },
+  "dependencies": {
+    "@angular/common": "^5.2.9",
+    "@angular/compiler": "^5.2.9",
+    "@angular/core": "^5.2.9",
+    "@angular/http": "^5.2.9",
+    "@angular/platform-browser": "^5.2.9",
+    "@angular/platform-browser-dynamic": "^5.2.9",
+    "@angular/router": "^5.2.9",
+    "core-js": "^2.5.4",
+    "rxjs": "^5.5.8",
+    "zone.js": "^0.8.20"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.8.6",
+    "@types/node": "^9.6.1",
+    "angular2-template-loader": "^0.6.2",
+    "codelyzer": "^4.2.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.1.0",
+    "jasmine-core": "^3.1.0",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.1",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^3.0.0",
+    "less": "^3.0.1",
+    "less-loader": "^4.1.0",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.6.2",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.20.3",
+    "ts-loader": "^4.1.0",
+    "tslint": "^5.9.1",
+    "tslint-loader": "^3.6.0",
+    "typescript": "^2.8.1",
+    "webpack": "^4.3.0",
+    "webpack-dev-server": "^3.1.1",
+    "webpack-merge": "^4.1.2",
+    "yarpm": "^0.2.1"
+  }
+}
